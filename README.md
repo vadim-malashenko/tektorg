@@ -7,11 +7,11 @@
 
 Пример:
 
-"(){}[]" => true
-"([{}])" => true
-"(}" => false
-"[(])" => false
-"[({})](]" => false
+  "(){}[]" => true
+  "([{}])" => true
+  "(}" => false
+  "[(])" => false
+  "[({})](]" => false
 
 
 ## 2
@@ -25,11 +25,11 @@
 
 Схемы:
 
-CREATE TABLE `authors` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255),
-  PRIMARY KEY (`id`)
-);
+  CREATE TABLE `authors` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `name` varchar(255),
+    PRIMARY KEY (`id`)
+  );
 
 CREATE TABLE `books` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -51,15 +51,15 @@ CREATE TABLE `books` (
 
 Пример:
 
-build(6, "*");
+  build(6, "*");
 
 Вернет массив:
 
-[
-  ' * ',
-  ' *** ',
-  ' ***** ',
-  ' ******* ',
-  ' ********* ',
-  '***********',
-]
+  [
+    ' * ',
+    ' *** ',
+    ' ***** ',
+    ' ******* ',
+    ' ********* ',
+    '***********',
+  ]
