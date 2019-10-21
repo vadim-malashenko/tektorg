@@ -1,3 +1,5 @@
+<?php
+
 function isBracketsBalanced (string $input) : bool {
 
   $brackets = str_split ($input);
